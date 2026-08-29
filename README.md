@@ -12,19 +12,21 @@ The reason I made this repo - [this](https://github.com/iPh0ne4s/iOS-5-6-Hacktiv
 These lockdownds were made by [sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/):\
 For iOS 6 - iPhone3,2 6.1.3 ipsw, taken from ipsw/048-2727-005.dmg/private/var/stash/lockdownd\
 For iOS 5 - iPhone3,3 5.1.1 ipsw, taken from ipsw/038-4297-008.dmg/private/var/stash/lockdownd\
-For iOS 4 - iPhone3,1 4.3.3 ipsw, taken from ipsw/038-1423-003.dmg/private/var/stash/lockdownd
+For iOS 4 - iPhone3,1 4.3.3 ipsw, taken from ipsw/038-1423-003.dmg/private/var/stash/lockdownd\
+For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec by [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176)
 
 ## Working on
 - iPad 2 (all revisions) all 6.x
-- iPhone 4S 6.0-6.1.3
-- iPod Touch 5 6.1.3
+- iPhone 4S 5.0-6.1.3
+- iPod Touch 5 6.0-6.1.3
 - iPhone 4 Rev A 6.0-6.1.3
+- iPhone 5 6.0-6.1.4
 - I hope will work on more devices, but I need testers, test and create an issue so I can expand this list
-- I haven't personally tested the iOS 4 and 5 files, but I'm confident they will work perfectly on devices running the specific firmware versions they were taken from (like iPhone 4 CDMA 5.1.1 and iPhone 4 GSM 4.3.3)
+- I haven't personally tested the iOS 3-5 files, but I'm confident they will work perfectly on devices running the specific firmware versions they were taken from (like iPhone 4 CDMA 5.1.1 and iPhone 4 GSM 4.3.3)
 
 ## What this file does
 
-- Bypasses activation on devices running iOS 4 to 6
+- Bypasses activation on devices running iOS 3 to 6
 - Preserves Finder and iTunes synchronization (syncs music unlike iPh0ne4s's file)
 - Allows using the device without unlocking with Apple ID or using valid SIM
 
@@ -33,11 +35,13 @@ For iOS 4 - iPhone3,1 4.3.3 ipsw, taken from ipsw/038-1423-003.dmg/private/var/s
 - lockdownd - the main file required for the 6.x bypass
 - lockdownd-5 - the main file required for the 5.x bypass
 - lockdownd-4 - you guessed it, the main file required for the 4.x bypass
+- lockdownd-3point2 - do I really need to explain?
 
 # Installation Guide
+### If you don't want/don't know how to replace the file, you can use the [Phoenix Ramdisk](https://t.me/phoenixactivator) utility, works on unjailbroken (ramdisk) and jailbroken (OpenSSH) iDevices, at this moment it doesn't work on iOS lower than 4.0
 
 Prerequisites:
-- A device running iOS 4 to 6
+- A device running iOS 3 to 6
 - Legacy iOS Kit
 
 Step-by-step instructions:
@@ -99,15 +103,16 @@ Your device should now have activation bypassed while retaining the ability to s
 
 ## Todo list
 
-- Automated script ([феникс активатор ака легаси активатор](https://github.com/maksimka539/legacyactivator/) привет)
+- [Automated script](https://t.me/phoenixactivator) ✅
 - Test more devices idk
 
 ## Disclaimer
 
-Use this tool at your own risk. The author is not responsible for any damage to your device.
+Use this at your own risk. The author is not responsible for any damage to your device.
 
 ## Credits
 
+- [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176) for iOS 3 file (if you don't like me taking your file DM me in telegram at vacsup i'll remove it)
 - [Sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/) and its developers for the original method
 - [iOS 5-6 Hacktivation](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) for my first bypass and giving me the idea to fix pc sync
 - DeepSeek for helping with README bc i don't know markdown lol
