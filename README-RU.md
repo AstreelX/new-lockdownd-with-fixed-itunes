@@ -108,7 +108,7 @@ mount_hfs /dev/disk0s1s3 /mnt1
 
 ## Благодарности
 
-- [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176) за файл для 3.х
+- [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176) за файл для 3.х (если вам не нравится, что я использую ваш файл, напишите мне в Telegram @ vacsup, я удалю его)
 - [Sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/) и его разработчикам за оригинальный метод
 - [iOS 5-6 Hacktivation](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) за мой первый обход и идею исправить синхронизацию с ПК
 - DeepSeek за помощь в оформлении README, потому что я не знаю Markdown
