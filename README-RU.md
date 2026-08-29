@@ -1,3 +1,4 @@
+## [English version](https://github.com/AstreelX/new-lockdownd-with-fixed-itunes/blob/main/README.md)
 # lockdownd с синхронизацией с ПК
 
 Патченный lockdownd для обхода активации на iOS 4–6 с сохранением синхронизации с ПК.
@@ -11,20 +12,21 @@
 Эти lockdownd'ы были созданы с помощью [sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/):\
 Для iOS 6 — прошивка iPhone3,2 6.1.3, взят из ipsw/048-2727-005.dmg/private/var/stash/lockdownd\
 Для iOS 5 — прошивка iPhone3,3 5.1.1, взят из ipsw/038-4297-008.dmg/private/var/stash/lockdownd\
-Для iOS 4 — прошивка iPhone3,1 4.3.3, взят из ipsw/038-1423-003.dmg/private/var/stash/lockdownd
-
+Для iOS 4 — прошивка iPhone3,1 4.3.3, взят из ipsw/038-1423-003.dmg/private/var/stash/lockdownd\
+Для iOS 3 - прошивка iPad 1 поколения 3.х, взят из ipsw/?/private/var/stash/libexec/lockdownd [этим человеком](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176)
 ## Работает на
 
 - iPad 2 (все ревизии) на всех 6.x
-- iPhone 4S 6.0–6.1.3
-- iPod Touch 5 6.1.3
+- iPhone 4S 5.0–6.1.3
+- iPod Touch 5 6.0-6.1.3
 - iPhone 4 Rev A 6.0–6.1.3
+- iPhone 5 6.0-6.1.4
 - Надеюсь, будет работать и на других устройствах, но нужны тестеры. Тестируйте и создавайте issue, чтобы я мог расширить список.
-- Я лично не тестировал файлы для iOS 4 и 5, но уверен, что они отлично будут работать на устройствах с теми прошивками, откуда они взяты (например, iPhone 4 CDMA 5.1.1 и iPhone 4 GSM 4.3.3).
+- Я лично не тестировал файлы для iOS 3-5, но уверен, что они отлично будут работать на устройствах с теми прошивками, откуда они взяты (например, iPhone 4 CDMA 5.1.1 и iPhone 4 GSM 4.3.3).
 
 ## Что делает этот файл
 
-- Обходит активацию на устройствах с iOS 4–6
+- Обходит активацию на устройствах с iOS 3–6
 - Сохраняет синхронизацию с Finder и iTunes (в отличие от файла iPh0ne4s, синхронизирует музыку)
 - Позволяет использовать устройство без разблокировки с помощью Apple ID и без действующей SIM-карты
 
@@ -33,11 +35,13 @@
 - `lockdownd` — основной файл для обхода на iOS 6.x
 - `lockdownd-5` — основной файл для обхода на iOS 5.x
 - `lockdownd-4` — удивительно, но основной файл для обхода на iOS 4.x
+- `lockdownd-3point2` — мне че реально надо обьяснять да
 
 # Инструкция по установке
+### Если вы не знаете/не хотите менять файл самостоятельно, воспользуйтесь программой [Phoenix Ramdisk](https://t.me/phoenixactivator), работает на устройствах с джейлбрейком (через рамдиск) и без него (по SSH), на данный момент работает только с iOS выше 4.0 включительно
 
 Необходимое:
-- Устройство с iOS 4–6
+- Устройство с iOS 3–6
 - [Legacy iOS Kit](https://github.com/LukeZGD/Legacy-iOS-Kit)
 
 Пошаговая инструкция:
@@ -95,7 +99,7 @@ mount_hfs /dev/disk0s1s3 /mnt1
 
 ## Сделаю в будущем
 
-- Автоматизированный скрипт
+- [Автоматизированный скрипт](https://t.me/phoenixactivator) ✅
 - Протестировать на других устройствах
 
 ## Предупреждение
@@ -104,6 +108,7 @@ mount_hfs /dev/disk0s1s3 /mnt1
 
 ## Благодарности
 
+- [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176) за файл для 3.х
 - [Sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/) и его разработчикам за оригинальный метод
 - [iOS 5-6 Hacktivation](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) за мой первый обход и идею исправить синхронизацию с ПК
 - DeepSeek за помощь в оформлении README, потому что я не знаю Markdown
