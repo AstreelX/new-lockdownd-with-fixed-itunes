@@ -13,7 +13,7 @@ These lockdownds were made by [sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze
 For iOS 6 - iPhone3,2 6.1.3 ipsw, taken from ipsw/048-2727-005.dmg/private/var/stash/lockdownd\
 For iOS 5 - iPhone3,3 5.1.1 ipsw, taken from ipsw/038-4297-008.dmg/private/var/stash/lockdownd\
 For iOS 4 - iPhone3,1 4.3.3 ipsw, taken from ipsw/038-1423-003.dmg/private/var/stash/lockdownd\
-For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec by [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176)
+For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/lockdownd by [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176)
 
 ## Working on
 - iPad 2 (all revisions) all 6.x
@@ -38,7 +38,7 @@ For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec 
 - lockdownd-3point2 - do I really need to explain?
 
 # Installation Guide
-### If you don't want/don't know how to replace the file, you can use the [Phoenix Ramdisk](https://t.me/phoenixactivator) utility, works on unjailbroken (ramdisk) and jailbroken (OpenSSH) iDevices, at this moment it doesn't work on iOS lower than 4.0
+### If you don't want/don't know how to replace the file, you can use the [Phoenix Ramdisk](https://t.me/phoenixactivator) utility, works on unjailbroken (ramdisk) and jailbroken (OpenSSH) iDevices, currently supports iOS 4.0 and above only
 
 Prerequisites:
 - A device running iOS 3 to 6
@@ -52,7 +52,7 @@ Step-by-step instructions:
 2. Connect via SSH and SFTP\
    Use Legacy iOS Kit to connect via SSH connection to your device. For SFTP use specialized programs (e.g. MobaXterm, FileZilla, etc.).
 
-3. Complete the setup until you reach the iCloud sign‑in screen
+3. Complete the setup until you reach the iCloud sign‑in screen (or another error that prevents further setup like "Unknown device" or SIM requirement)
 
 4. Replace the lockdownd file\
    Navigate to the following path on your device:
@@ -104,7 +104,7 @@ Your device should now have activation bypassed while retaining the ability to s
 ## Todo list
 
 - [Automated script](https://t.me/phoenixactivator) ✅
-- Test more devices idk
+- Test more devices (help me with it)
 
 ## Disclaimer
 
