@@ -1,7 +1,7 @@
 ## [English version](https://github.com/AstreelX/new-lockdownd-with-fixed-itunes/blob/main/README.md)
 # lockdownd с синхронизацией с ПК
 
-Патченный lockdownd для обхода активации на iOS 4–6 с сохранением синхронизации с ПК.
+Патченный lockdownd для обхода активации на iOS 3–6 с сохранением синхронизации с ПК.
 
 ## Важно
 
