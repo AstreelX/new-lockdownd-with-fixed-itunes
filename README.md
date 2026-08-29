@@ -1,7 +1,7 @@
 ## **[Читать на русском](README-RU.md)**
 # lockdownd with PC sync
 
-The patched lockdownd to bypass activation on iOS 4 to 6 while maintaining PC sync functionality.
+The patched lockdownd to bypass activation on iOS 3 to 6 while maintaining PC sync functionality.
 
 ## Important
 
