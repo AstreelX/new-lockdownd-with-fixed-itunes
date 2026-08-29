@@ -40,12 +40,12 @@ For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/
 # Installation Guide
 ### If you don't want/don't know how to replace the file, you can use the [Phoenix Ramdisk](https://t.me/phoenixactivator) utility, works on unjailbroken (ramdisk) and jailbroken (OpenSSH) iDevices, currently supports iOS 4.0 and above only
 
-Prerequisites:
+## Prerequisites:
 - A device running iOS 3 to 6
 - Legacy iOS Kit
 
-Step-by-step instructions:
-
+## Step-by-step instructions:
+### Important: iOS 3.x replacing process is different from 4-6, I think the path is different? Not /usr/libexec but /var/stash/libexec but I don't really know and can't test it
 1. Restore the device with jailbreak\
    Use Legacy iOS Kit to restore your device with a jailbreak enabled.
 
