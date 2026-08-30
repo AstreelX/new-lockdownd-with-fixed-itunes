@@ -5,7 +5,7 @@ The patched lockdownd to bypass activation on iOS 3 to 6 while maintaining PC sy
 
 ## Important
 
-This repository contains only the necessary lockdownd file. The full guide is provided below.
+This repository contains only the necessary lockdownd files. The full guide is provided below.
 
 The reason I made this repo - [this](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) lockdownd wasn't working very well with 3utools and at all with iTunes or Finder.
 
@@ -13,16 +13,36 @@ These lockdownds were made by [sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze
 For iOS 6 - iPhone3,2 6.1.3 ipsw, taken from ipsw/048-2727-005.dmg/private/var/stash/lockdownd\
 For iOS 5 - iPhone3,3 5.1.1 ipsw, taken from ipsw/038-4297-008.dmg/private/var/stash/lockdownd\
 For iOS 4 - iPhone3,1 4.3.3 ipsw, taken from ipsw/038-1423-003.dmg/private/var/stash/lockdownd\
-For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/lockdownd by [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176)
+For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/lockdownd **by [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176)**
 
-## Working on
-- iPad 2 (all revisions) all 6.x
-- iPhone 4S 5.0-6.1.3
-- iPod Touch 5 6.0-6.1.3
-- iPhone 4 Rev A 6.0-6.1.3
-- iPhone 5 6.0-6.1.4
-- I hope will work on more devices, but I need testers, test and create an issue so I can expand this list
-- I haven't personally tested the iOS 3-5 files, but I'm confident they will work perfectly on devices running the specific firmware versions they were taken from (like iPhone 4 CDMA 5.1.1 and iPhone 4 GSM 4.3.3)
+## 📱 Compatibility Matrix
+### **Legend:**
+* ✅ = Fully Working
+* ❌ = Tested, needs patch
+* ⏳ = Work in progress / Planned
+* — = iOS version not supported by hardware
+### ⚙️ Apple A4 - A6(X) Devices
+
+| Device Model | Chip | iOS 4.x | iOS 5.x | iOS 6.x | Status & Notes |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **iPhone 4 (GSM)** `iPhone3,1` | A4 | ✅ | ✅ | ✅ | Every version works |
+| **iPhone 4 (Rev A)** `iPhone3,2` | A4 | — | — | ✅ | Fully working on 6.0 - 6.1.3 |
+| **iPhone 4 (CDMA)** `iPhone3,3` | A4 | ⏳ | ✅ | ⏳ | Every version should work |
+| **iPod Touch (4th Gen)** `iPod4,1` | A4 | ✅ | ✅ | ✅ | Every version works |
+| **iPhone 4S** `iPhone4,1` | A5 | — | ✅ | ✅ | Supports 5.0 up to 6.1.3 |
+| **iPad 2 (All Revs)** `iPad2,1-2,4` | A5 | ⏳ | ⏳ | ✅ | All hardware revisions working on 6.x |
+| **iPad (3rd Gen)** `iPad3,1-3,3` | A5X | — | ⏳ | ⏳ | Planned for testing |
+| **iPad Mini (1st Gen)** `iPad2,5-2,7`| A5 | — | — | ⏳ | Planned for testing |
+| **iPod Touch (5th Gen)** `iPod5,1` | A5 | — | — | ✅ | Every 6.x works |
+| **iPhone 5** `iPhone5,1` / `iPhone5,2` | A6 | — | — | ✅ | Every 6.x works |
+| **iPad (4th Gen)** `iPad3,4-3,6` | A6X | — | — | ⏳ | Planned for testing |
+
+### 📜 Legacy / Older Devices (Pre-A4 & Special)
+
+| Device Model | Chip | iOS 3.x | iOS 4.x | iOS 5.x | Status & Notes |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **iPod Touch (3rd Gen)** `iPod3,1` | Samsung S5L8922 | ⏳ | ⏳ | ⏳ | Planned for testing |
+| **iPad (1st Gen)** `iPad1,1` | A4 | ✅ | ⏳ | ⏳ | 3.x works, others are planned for testing |
 
 ## What this file does
 
@@ -31,21 +51,23 @@ For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/
 - Allows using the device without unlocking with Apple ID or using valid SIM
 
 ## Repository contents
-
-- lockdownd - the main file required for the 6.x bypass
+All files are in a folder called "lockdownd's"
+- lockdownd-6 - the main file required for the 6.x bypass
 - lockdownd-5 - the main file required for the 5.x bypass
 - lockdownd-4 - you guessed it, the main file required for the 4.x bypass
-- lockdownd-3point2 - do I really need to explain?
+- lockdownd-3 - do I really need to explain?
 
 # Installation Guide
-### If you don't want/don't know how to replace the file, you can use the [Phoenix Ramdisk](https://t.me/phoenixactivator) utility, works on unjailbroken (ramdisk) and jailbroken (OpenSSH) iDevices, currently supports iOS 4.0 and above only
+### If you don't want/don't know/don't want to know how to replace the file, you can use the [Phoenix Ramdisk](https://t.me/phoenixactivator) utility, works on unjailbroken (ramdisk) and jailbroken (OpenSSH) iDevices, currently supports iOS 4.0 and above only, also available in Releases tab
 
 ## Prerequisites:
 - A device running iOS 3 to 6
 - Legacy iOS Kit
+- SSH or/and SFTP client
+- Patience, a lot of it
 
 ## Step-by-step instructions:
-### Important: iOS 3.x replacing process is different from 4-6, I think the path is different? Not /usr/libexec but /var/stash/libexec but I don't really know and can't test it
+
 1. Restore the device with jailbreak\
    Use Legacy iOS Kit to restore your device with a jailbreak enabled.
 
@@ -59,10 +81,11 @@ For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/
 ```
 /usr/libexec/lockdownd
 ```
-   Replace the existing file with the lockdownd file from this repository.\
-   If you're using lockdownd-4 or lockdownd-5, rename it to just "lockdownd" before copying.\
-   **Important:** Make sure you downloaded the file for your iOS version, and **ALWAYS backup the original file!**
-
+   Replace the existing file with the lockdownd file from this repository, rename it to just "lockdownd" before copying.
+   
+### **Important:** Make sure you downloaded the file for your iOS version, and **ALWAYS backup the original file by renaming or downloading it!**
+### **VERY Important:** iOS 3.x replacing process is different from 4-6, the path is not /usr/libexec but /private/var/stash/libexec
+   
 5. You DON'T need to remove/move Setup.app\
    The setup process goes as normal after file change
 
@@ -103,7 +126,7 @@ Your device should now have activation bypassed while retaining the ability to s
 
 ## Todo list
 
-- [Automated script](https://t.me/phoenixactivator) ✅
+- [Automated tool](https://t.me/phoenixactivator) ✅
 - Test more devices (help me with it)
 
 ## Disclaimer
@@ -112,7 +135,7 @@ Use this at your own risk. The author is not responsible for any damage to your 
 
 ## Credits
 
-- [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176) for iOS 3 file (if you don't like me taking your file DM me in telegram at vacsup i'll remove it)
+- [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176) for iOS 3 file, legend
 - [Sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/) and its developers for the original method
 - [iOS 5-6 Hacktivation](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) for my first bypass and giving me the idea to fix pc sync
 - DeepSeek for helping with README bc i don't know markdown lol
