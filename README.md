@@ -12,32 +12,32 @@ The reason I made this repo - [this](https://github.com/iPh0ne4s/iOS-5-6-Hacktiv
 These lockdownds were made by [sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/):\
 For iOS 6 - iPhone3,2 6.1.3 ipsw, taken from ipsw/048-2727-005.dmg/private/var/stash/lockdownd\
 For iOS 5 - iPhone3,3 5.1.1 ipsw, taken from ipsw/038-4297-008.dmg/private/var/stash/lockdownd\
-For iOS 4 - iPhone3,1 4.3.3 ipsw, taken from ipsw/038-1423-003.dmg/private/var/stash/lockdownd\
-For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/lockdownd **by [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176)**
+For iOS 4 - iPhone3,1 4.3.3 ipsw, taken from ipsw/038-1423-003.dmg/private/var/stash/lockdownd
+
+For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/lockdownd **personally by [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176)**
 
 ## 📱 Compatibility Matrix
 ### **Legend:**
 * ✅ = Fully Working
-* ❌ = Tested, needs patch
 * ⏳ = Work in progress / Planned
-* — = iOS version not supported by hardware
+* ❌ = iOS version not supported by hardware
 ### ⚙️ Apple A4 - A6(X) Devices
 
 | Device Model | Chip | iOS 4.x | iOS 5.x | iOS 6.x | Status & Notes |
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | **iPhone 4 (GSM)** `iPhone3,1` | A4 | ✅ | ✅ | ✅ | Every version works |
-| **iPhone 4 (Rev A)** `iPhone3,2` | A4 | — | — | ✅ | Fully working on 6.0 - 6.1.3 |
+| **iPhone 4 (Rev A)** `iPhone3,2` | A4 | ❌ | ❌ | ✅ | Fully working on 6.0 - 6.1.3 |
 | **iPhone 4 (CDMA)** `iPhone3,3` | A4 | ⏳ | ✅ | ⏳ | Every version should work |
 | **iPod Touch (4th Gen)** `iPod4,1` | A4 | ✅ | ✅ | ✅ | Every version works |
-| **iPhone 4S** `iPhone4,1` | A5 | — | ✅ | ✅ | Supports 5.0 up to 6.1.3 |
+| **iPhone 4S** `iPhone4,1` | A5 | ❌ | ✅ | ✅ | Supports 5.0 up to 6.1.3 |
 | **iPad 2 (All Revs)** `iPad2,1-2,4` | A5 | ⏳ | ⏳ | ✅ | All hardware revisions working on 6.x |
-| **iPad (3rd Gen)** `iPad3,1-3,3` | A5X | — | ⏳ | ⏳ | Planned for testing |
-| **iPad Mini (1st Gen)** `iPad2,5-2,7`| A5 | — | — | ⏳ | Planned for testing |
-| **iPod Touch (5th Gen)** `iPod5,1` | A5 | — | — | ✅ | Every 6.x works |
-| **iPhone 5** `iPhone5,1` / `iPhone5,2` | A6 | — | — | ✅ | Every 6.x works |
-| **iPad (4th Gen)** `iPad3,4-3,6` | A6X | — | — | ⏳ | Planned for testing |
+| **iPad (3rd Gen)** `iPad3,1-3,3` | A5X | ❌ | ⏳ | ⏳ | Planned for testing |
+| **iPad Mini (1st Gen)** `iPad2,5-2,7`| A5 | ❌ | ❌ | ⏳ | Planned for testing |
+| **iPod Touch (5th Gen)** `iPod5,1` | A5 | ❌ | ❌ | ✅ | Every 6.x works |
+| **iPhone 5** `iPhone5,1` / `iPhone5,2` | A6 | ❌ | ❌ | ✅ | Every 6.x works |
+| **iPad (4th Gen)** `iPad3,4-3,6` | A6X | ❌ | ❌ | ⏳ | Planned for testing |
 
-### 📜 Legacy / Older Devices (Pre-A4 & Special)
+### 📜 Legacy / Older Devices (Pre-A4)
 
 | Device Model | Chip | iOS 3.x | iOS 4.x | iOS 5.x | Status & Notes |
 | :--- | :---: | :---: | :---: | :---: | :--- |
@@ -86,7 +86,7 @@ All files are in a folder called "lockdownd's"
 ### **Important:** Make sure you downloaded the file for your iOS version, and **ALWAYS backup the original file by renaming or downloading it!**
 ### **VERY Important:** iOS 3.x replacing process is different from 4-6, the path is not /usr/libexec but /private/var/stash/libexec
    
-5. You DON'T need to remove/move Setup.app\
+5. You DON'T need to remove/move/rename Setup.app\
    The setup process goes as normal after file change
 
 6. Set proper permissions (very important, or else you'll get bootloop!)\
@@ -96,16 +96,10 @@ All files are in a folder called "lockdownd's"
 chmod 755 /usr/libexec/lockdownd
 ```
    
-   OR you can set permissions with SFTP program
+   OR you can set permissions with SFTP program.
    
 7. Apply changes\
-   Either run:
-   
-```
-ldrestart
-```
-   
-   OR simply reboot your device.
+   Either run  `ldrestart` OR simply reboot your device.
 
 ## For CoolBooter users
 
