@@ -7,6 +7,8 @@ The patched lockdownd to bypass activation on iOS 3 to 6 while maintaining PC sy
 
 This repository contains only the necessary lockdownd files. The full guide is provided below.
 
+❗ The SIM **will NOT work**, maybe 2G/3G will, but calls (incoming and outcoming) 100% won't. 
+
 The reason I made this repo - [this](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) lockdownd wasn't working very well with 3utools and at all with iTunes or Finder.
 
 These lockdownds were made by [sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/):\
