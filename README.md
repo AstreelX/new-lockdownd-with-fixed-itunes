@@ -30,7 +30,8 @@ For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/
 | **iPhone 4 (CDMA)** `iPhone3,3` | A4 | ⏳ | ✅ | ⏳ | Every version should work |
 | **iPod Touch (4th Gen)** `iPod4,1` | A4 | ✅ | ✅ | ✅ | Every version works |
 | **iPhone 4S** `iPhone4,1` | A5 | ❌ | ✅ | ✅ | Supports 5.0 up to 6.1.3 |
-| **iPad 2 (All Revs)** `iPad2,1-2,4` | A5 | ⏳ | ⏳ | ✅ | All hardware revisions working on 6.x |
+| **iPad 2** `iPad2,1-2,3` | A5 | ⏳ | ⏳ | ✅ | Every version should work |
+| **iPad 2 Rev A** `iPad2,4` | A5 | ❌ | ❌ | ✅ | Fully working on 6.0 - 6.1.3 |
 | **iPad (3rd Gen)** `iPad3,1-3,3` | A5X | ❌ | ⏳ | ⏳ | Planned for testing |
 | **iPad Mini (1st Gen)** `iPad2,5-2,7`| A5 | ❌ | ❌ | ⏳ | Planned for testing |
 | **iPod Touch (5th Gen)** `iPod5,1` | A5 | ❌ | ❌ | ✅ | Every 6.x works |
