@@ -90,7 +90,7 @@ All files are in a folder called "lockdownd's"
    Replace the existing file with the lockdownd file from this repository, rename it to just "lockdownd" before copying.
    
 ### **Important:** Make sure you downloaded the file for your iOS version, and **ALWAYS backup the original file by renaming or downloading it!**
-### **VERY Important:** iOS 3.x replacing process is different from 4-6, the path is not /usr/libexec but /private/var/stash/libexec
+<!--### **VERY Important:** iOS 3.x replacing process is different from 4-6, the path is not /usr/libexec but /private/var/stash/libexec-->
    
 5. You DON'T need to remove/move/rename Setup.app\
    The setup process goes as normal after file change. Don't be a barbarian, let the app do its job.
