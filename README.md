@@ -3,11 +3,15 @@
 
 The patched lockdownd to bypass activation on iOS 3 to 6 while maintaining PC sync functionality.
 
-## Important
+# Very important
 
-This repository contains only the necessary lockdownd files. The full guide is provided below.
+- This repository contains only the necessary lockdownd files and the autochanging program. The full guide is provided below.
 
-❗ The SIM **will NOT work**, maybe 2G/3G will, but calls (incoming and outcoming) 100% won't. 
+- The SIM **will NOT work**, maybe 2G/3G will, but incoming and outcoming calls 100% won't. 
+
+- There soon will be a video guide on YouTube, including manual (guide below) method and automatic (Phoenix Ramdisk) method
+- [Phoenix Ramdisk](https://t.me/phoenixactivator) (also available in Releases tab) supports iOS 4-10, 4-6 using my lockdownd method, 7-10 using mobilegestalt method
+---
 
 The reason I made this repo - [this](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) lockdownd wasn't working very well with 3utools and at all with iTunes or Finder.
 
@@ -24,8 +28,6 @@ For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/
 * ⏳ = Planned for testing, but should work
 * ❌ = iOS version not supported by hardware
 
-### ❗ iPhone 4 (Rev A) & iPad 2nd gen (Rev A) only support iOS 6.x, which is working.
-
 ### ⚙️ Apple A4 - A6(X) Devices
 
 | Device Model | Chip | iOS 4.x | iOS 5.x | iOS 6.x | Status & Notes |
@@ -41,14 +43,18 @@ For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/
 | **iPhone 5** `iPhone5,1` / `iPhone5,2` | A6 | ❌ | ❌ | ✅ | Every version works |
 | **iPad (4th Gen)** `iPad3,4-3,6` | A6X | ❌ | ❌ | ⏳ | Planned for testing |
 
+❗ iPhone 4 (Rev A) & iPad 2nd gen (Rev A) only support iOS 6.x, which is working.
+
 ### 📜 Very legacy devices
 
-| Device Model | Chip | iOS 3.x | iOS 4.x | iOS 5.x | iOS 6.x | Status & Notes |
-| :--- | :---: | :---: | :---: | :---: | :---: | :--- |
-| **iPod Touch (3rd Gen)** `iPod3,1` | Samsung S5L8922 | ⏳ | ⏳ | ⏳ | ❌ | Planned for testing |
-| **iPad (1st Gen)** `iPad1,1` | A4 | ✅ | ⏳ | ⏳ | ❌ | 3.x works, 4-5 planned for testing |
+| Device Model | Chip | iOS 3.x | iOS 4.x | iOS 5.x | Status & Notes |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **iPod Touch (3rd Gen)** `iPod3,1` | Samsung S5L8922 | ⏳ | ⏳ | ⏳ | Planned for testing |
+| **iPad (1st Gen)** `iPad1,1` | A4 | ✅ | ⏳ | ⏳ | 3.x works, 4-5 planned for testing |
+
 <!--| **iPhone 4 (Rev A)** `iPhone3,2` | A4 | ❌ | ❌ | ❌ | ✅ | Every version works |
 | **iPad 2 (Rev A)** `iPad2,4` | A5 | ❌ | ❌ | ❌| ✅ | Every version works |-->
+
 
 ## What this file does
 
@@ -64,7 +70,7 @@ All files are in a folder called "lockdownd's"
 - lockdownd-3 - do I really need to explain?
 
 # Installation Guide
-### If you don't want/don't know/don't want to know how to replace the file, you can use the [Phoenix Ramdisk](https://t.me/phoenixactivator) utility, works on unjailbroken (ramdisk) and jailbroken (OpenSSH) iDevices, currently supports iOS 4.0 and above only, also available in Releases tab
+### If you don't want/don't know/don't want to know how to replace the file, you can use the [Phoenix Ramdisk](https://t.me/phoenixactivator) utility, works on unjailbroken (ramdisk) and jailbroken (OpenSSH) iDevices, currently does not support iOS 3
 
 ## Prerequisites:
 - A device running iOS 3 to 6
@@ -90,8 +96,8 @@ All files are in a folder called "lockdownd's"
    Replace the existing file with the lockdownd file from this repository, rename it to just "lockdownd" before copying.
    
 ### **Important:** Make sure you downloaded the file for your iOS version, and **ALWAYS backup the original file by renaming or downloading it!**
-<!--### **VERY Important:** iOS 3.x replacing process is different from 4-6, the path is not /usr/libexec but /private/var/stash/libexec-->
-   
+### The iOS 3 path is different (maybe? the guy who originally made the patch said so), not `/usr/libexec/lockdownd` but `/var/stash/libexec/lockdownd`
+
 5. You DON'T need to remove/move/rename Setup.app\
    The setup process goes as normal after file change. Don't be a barbarian, let the app do its job.
 
