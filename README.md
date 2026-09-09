@@ -13,7 +13,7 @@ The patched lockdownd to bypass activation on iOS 3 to 6 while maintaining PC sy
 - [Phoenix Ramdisk](https://t.me/phoenixactivator) (also available in Releases tab) supports iOS 4-10, 4-6 using my lockdownd method, 7-10 using mobilegestalt method
 ---
 
-The reason I made this repo - [this](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) lockdownd wasn't working very well with 3utools and at all with iTunes or Finder.
+The reason I made this repo - [this](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) lockdownd wasn't working very well with 3utools and at all with iTunes or Finder. I needed a normal adequate way to sync music on my iPod Touch 5 iOS 6.1.3
 
 These lockdownds were made by [sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/):\
 For iOS 6 - iPhone3,2 6.1.3 ipsw, taken from ipsw/048-2727-005.dmg/private/var/stash/lockdownd\
@@ -96,7 +96,7 @@ All files are in a folder called "lockdownd's"
    Replace the existing file with the lockdownd file from this repository, rename it to just "lockdownd" before copying.
    
 ### **Important:** Make sure you downloaded the file for your iOS version, and **ALWAYS backup the original file by renaming or downloading it!**
-### The iOS 3 path is different (maybe? the guy who originally made the patch said so), not `/usr/libexec/lockdownd` but `/var/stash/libexec/lockdownd`
+### The iOS 3 path is different, not `/usr/libexec/lockdownd` but `/var/stash/libexec/lockdownd`
 
 5. You DON'T need to remove/move/rename Setup.app\
    The setup process goes as normal after file change. Don't be a barbarian, let the app do its job.
@@ -134,14 +134,18 @@ Your device should now have activation bypassed while retaining the ability to s
 
 - [Automated tool](https://t.me/phoenixactivator) ✅
 - Test more devices (help me with it)
+- iPhoneOS 1 and 2
 
 ## Disclaimer
 
 Use this at your own risk. The author is not responsible for any damage to your device.
 
 ## Credits
-
+- **AstreelX** for hosting this repo (yeah don't ask me why i didn't make a repo myself there is a personal reason)
+- [Legacy iOS Kit](https://github.com/LukeZGD/Legacy-iOS-Kit/) for its pure existence, most legendary tool there ever was
 - [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176) for iOS 3 file, legend
 - [Sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/) and its developers for the original method
-- [iOS 5-6 Hacktivation](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) for my first bypass and giving me the idea to fix pc sync
-- DeepSeek for helping with README bc i don't know markdown lol
+- [iOS 5-6 Hacktivation](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) for my first bypass and motivating me to fix pc sync
+- [DeepSeek](chat.deepseek.com) and [Gemini](gemini.google.com) for helping with READMEs bc i don't know markdown lol
+- [iDeviceLab009](https://www.youtube.com/watch?v=Wk2EAGZhFC0) for a video guide
+- [illyagif](https://github.com/illyagif) for Phoenix Ramdisk
