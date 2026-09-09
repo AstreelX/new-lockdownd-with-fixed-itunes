@@ -9,7 +9,7 @@ The patched lockdownd to bypass activation on iOS 3 to 6 while maintaining PC sy
 
 - The SIM **will NOT work**, maybe 2G/3G will, but incoming and outcoming calls 100% won't. 
 
-- There soon will be a video guide on YouTube, including manual (guide below) method and automatic (Phoenix Ramdisk) method
+- There is now [a video guide on YouTube](https://youtu.be/Wk2EAGZhFC0), including manual (guide below) method and automatic (Phoenix Ramdisk) method
 - [Phoenix Ramdisk](https://t.me/phoenixactivator) (also available in Releases tab) supports iOS 4-10, 4-6 using my lockdownd method, 7-10 using mobilegestalt method
 ---
 
