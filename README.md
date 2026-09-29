@@ -1,27 +1,27 @@
 ## **[Читать на русском](README-RU.md)**
 # lockdownd with PC sync
 
-The patched lockdownd to bypass activation on iOS 3 to 6 while maintaining PC sync functionality. Made by [polin0m aka deeptypeflow](https://github.com/deeptypeflow)
+The patched lockdownd to bypass activation on iOS 3 to 6 while maintaining PC sync functionality. 
+### Made by [polin0m aka deeptypeflow](https://github.com/deeptypeflow)
 
 ## 📑 Table of Contents
 
 - [Very important](#very-important)
 - [Compatibility Matrix](#-compatibility-matrix-out-of-skeuomorphic-ios-versions-ios-7-are-not-supported-by-this-method)
-- [What this file does](#what-this-file-does)
 - [Repository contents](#repository-contents)
 - [Installation Guide](#installation-guide)
 - [For CoolBooter users](#for-coolbooter-users)
 - [After installation](#after-installation)
 - [Credits](#credits)
 
-# Very important
+## Very important
 
 - This repository contains only the necessary lockdownd files and the autochanging program. The full guide is provided below.
 
 - The SIM **will NOT work**, maybe 2G/3G will, but incoming and outcoming calls 100% won't. 
 
 - **There is now [a video guide on YouTube](https://youtu.be/Wk2EAGZhFC0)**, including manual (guide below) method and automatic (Phoenix Ramdisk) method
-- [Phoenix Ramdisk](https://t.me/phoenixactivator) (also available in Releases tab) supports iOS 4-10, 4-6 using my lockdownd method, 7-10 using mobilegestalt method
+- [Phoenix Ramdisk](https://t.me/phoenixactivator) (also available in [Releases](https://github.com/AstreelX/new-lockdownd-with-fixed-itunes/releases) tab) supports iOS 4-10, 4-6 using my lockdownd method, 7-10 using mobilegestalt method
 ---
 
 The reason I made this repo - [this](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) lockdownd wasn't working very well with 3utools and at all with iTunes or Finder. I needed a normal adequate way to sync music on my iPod Touch 5 iOS 6.1.3
@@ -32,6 +32,12 @@ For iOS 5 - iPhone3,3 5.1.1 ipsw, taken from ipsw/038-4297-008.dmg/private/var/s
 For iOS 4 - iPhone3,1 4.3.3 ipsw, taken from ipsw/038-1423-003.dmg/private/var/stash/lockdownd
 
 For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/lockdownd **personally by [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176)**
+
+## What this file does
+
+- Bypasses activation on devices running iOS 3 to 6
+- Preserves Finder and iTunes synchronization (syncs music unlike iPh0ne4s's file)
+- Allows using the device without unlocking with Apple ID or using valid SIM
 
 ## 📱 Compatibility Matrix (out of skeuomorphic iOS versions, iOS 7+ are not supported by this method)
 ### **Legend:**
@@ -62,16 +68,6 @@ For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | **iPod Touch (3rd Gen)** `iPod3,1` | Samsung S5L8922 | ⏳ | ⏳ | ⏳ | Planned for testing |
 | **iPad (1st Gen)** `iPad1,1` | A4 | ✅ | ⏳ | ⏳ | 3.x works, 4-5 planned for testing |
-
-<!--| **iPhone 4 (Rev A)** `iPhone3,2` | A4 | ❌ | ❌ | ❌ | ✅ | Every version works |
-| **iPad 2 (Rev A)** `iPad2,4` | A5 | ❌ | ❌ | ❌| ✅ | Every version works |-->
-
-
-## What this file does
-
-- Bypasses activation on devices running iOS 3 to 6
-- Preserves Finder and iTunes synchronization (syncs music unlike iPh0ne4s's file)
-- Allows using the device without unlocking with Apple ID or using valid SIM
 
 ## Repository contents
 All files are in a folder called "lockdownd's"
@@ -159,6 +155,6 @@ Use this at your own risk. The author is not responsible for any damage to your 
 - [cpalmagu](https://github.com/LukeZGD/Legacy-iOS-Kit/issues/1176) for iOS 3 file, legend
 - [Sn0wbreeze](https://github.com/iH8sn0w/sn0wbreeze/) and its developers for the original method
 - [iOS 5-6 Hacktivation](https://github.com/iPh0ne4s/iOS-5-6-Hacktivation) for my first bypass and motivating me to fix pc sync
-- [DeepSeek](chat.deepseek.com) and [Gemini](gemini.google.com) for helping with READMEs bc i don't know markdown lol
+- [DeepSeek](https://chat.deepseek.com) and [Gemini](https://gemini.google.com) for helping with READMEs bc i don't know markdown lol
 - [iDeviceLab009](https://www.youtube.com/watch?v=Wk2EAGZhFC0) for a video guide
 - [illyagif](https://github.com/illyagif) for Phoenix Ramdisk
