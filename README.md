@@ -1,7 +1,18 @@
 ## **[Читать на русском](README-RU.md)**
 # lockdownd with PC sync
 
-The patched lockdownd to bypass activation on iOS 3 to 6 while maintaining PC sync functionality.
+The patched lockdownd to bypass activation on iOS 3 to 6 while maintaining PC sync functionality. Made by [polin0m aka deeptypeflow](https://github.com/deeptypeflow)
+
+## 📑 Table of Contents
+
+- [Very important](#very-important)
+- [Compatibility Matrix](#-compatibility-matrix-out-of-skeuomorphic-ios-versions-ios-7-are-not-supported-by-this-method)
+- [What this file does](#what-this-file-does)
+- [Repository contents](#repository-contents)
+- [Installation Guide](#installation-guide)
+- [For CoolBooter users](#for-coolbooter-users)
+- [After installation](#after-installation)
+- [Credits](#credits)
 
 # Very important
 
