@@ -66,6 +66,9 @@ For iOS 3 - iPad 1st gen, 3.? ipsw, taken from ipsw/?/private/var/stash/libexec/
 
 | Device Model | Chip | iOS 3.x | iOS 4.x | iOS 5.x | Status & Notes |
 | :--- | :---: | :---: | :---: | :---: | :--- |
+| **iPhone (2G)** `iPhone1,1` | Samsung S5L8900 | ⏳ | ❌ | ❌ | Planned for testing |
+| **iPhone 3G** `iPhone1,2` | Samsung S5L8900 | ⏳ | ⏳ | ❌ | Planned for testing |
+| **iPhone 3GS** `iPhone2,1` | Samsung S5L8920 | ⏳ | ⏳ | ⏳ | Planned for testing |
 | **iPod Touch (3rd Gen)** `iPod3,1` | Samsung S5L8922 | ⏳ | ⏳ | ⏳ | Planned for testing |
 | **iPad (1st Gen)** `iPad1,1` | A4 | ✅ | ⏳ | ⏳ | 3.x works, 4-5 planned for testing |
 
